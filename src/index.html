@@ -1,0 +1,35 @@
+<!-- Welcome Screen -->
+<div class='screen' id='welcomeScreen'>
+  <h1>Fun Grocery Store Game!</h1>
+  <h4>By StringBean</h4>
+  <div class='flex-row'>
+    <a class='flex-row' href='https://www.youtube.com/watch?v=-i_TnZw9dYU' target='_blank'><img src='https://t.sawczak.com/misc_assets/ics-hosting/jc-001.png' />
+    </a>
+  </div>
+  <button class='button' id='play-button'>PLAY</button>
+  <button class='button' id='menu-button'>Menu</button>
+</div>
+
+<!-- Load Game Screen -->
+<div class='hide' id='loadMenu'></div>
+<!-- The plan is that the continue game button will only show up once a person has already started a game. Hopefully will be able to save this information with cookies -->
+<p><button class='button' id='continueButton' data-screen='loadGame'>Continue Game</button></p>
+<p><button class='button' id='newgameButton' data-screen='newGame'>New Game</button></p>
+
+<!-- Menu Screen -->
+<div class='hide' id='helpMenu'>
+  <p><button class='button' id="instructions-button" data-screen="instructions">Instructions</button></p>
+  <p><button class='button' id="instructions-button" data-screen="settings">Settings</button>
+    <button id='menu-close'>Close Menu</button>
+  </p>
+
+  <!-- Instruction Screen-->
+  <div class='hide' id='instructions'></div>
+  <h3>Controls:</h3>
+  <p>
+    Move your player using arrow keys. To grab an item, tap it.
+  </p>
+  <p class="footer">
+    <button class='button' data-screen="menu" id='returnButton'>Back to Menu</button>
+  </p>
+</div>
